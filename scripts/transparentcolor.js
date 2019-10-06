@@ -20,7 +20,7 @@ function transparentColor(ctx,image1,color){
 			//console.log("is Red",i,iD1[i],iD1[i+1],iD1[i+2])
 			//IMPORTANT CONDITIONS
 			//(iD1[i]>=80 && iD1[i]<=255  && iD1[i+1]-iD1[i+2]<=15 && iD1[i+1]<=70 && iD1[i+2]<=70)||(iD1[i]>=200 && iD1[i]<=255  && iD1[i+1]<=127 && iD1[i+2]<=127)||
-			if((iD1[i]-28>iD1[i+1] && iD1[i]-10>iD1[i+2] && iD1[i+1]-iD1[i+2]<=100 && iD1[i+2]-iD1[i+1]<=100))
+			if((iD1[i]-28>iD1[i+1] && iD1[i]-10>iD1[i+2] && iD1[i+1]-iD1[i+2]<=100 && iD1[i+2]-iD1[i+1]<=100)){
 				TransparentRedImgData.data[i]=iD1[i]
 				TransparentRedImgData.data[i+1]=iD1[i+1]
 				TransparentRedImgData.data[i+2]=iD1[i+2]
@@ -68,9 +68,6 @@ function transparentColor(ctx,image1,color){
 		}
 	}
 	return TransparentRedImgData
-		
-	//var key1=0,key2=2000
-	//animateTransparent(ctx,color,image,iD1,TransparentRedImgData,0,2000-1,key1)
-	//animateTransparent(ctx,color,image,iD1,TransparentRedImgData,0,4000-1,key2)
+	
 	
 }
