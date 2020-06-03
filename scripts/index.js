@@ -62,8 +62,11 @@ function DrawNavBar(){
 	button(cvs.width-165,285,120,30,"Invert Color","#e6f2ff","#0059b3",()=>{
 		invertColor(ctx,renderableImage1)
 	})
-	button(cvs.width-165,375,120,30,"Identify Object","#e6f2ff","#0059b3",()=>{
+	button(cvs.width-165,330,120,30,"Identify Object","#e6f2ff","#0059b3",()=>{
 		identifyObject(cvs,renderableImage1)
+	})
+	button(cvs.width-165,375,120,30,"Transfer","#e6f2ff","#0059b3",()=>{
+		Transfer(cvs,renderableImage1,renderableImage2)
 	})
 }
 
